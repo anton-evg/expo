@@ -1,0 +1,590 @@
+.about-page,
+.portfolio-page,
+.manufacturing-page,
+.contacts-page {
+    background: var(--core-stone);
+    color: var(--core-ink);
+    overflow-x: hidden
+}
+
+.about-page .inner-container,
+.portfolio-page .inner-container,
+.manufacturing-page .inner-container,
+.contacts-page .inner-container {
+    margin: 0 auto;
+    width: min(calc(100% - 96px), var(--core-container))
+}
+
+.about-page .inner-header,
+.portfolio-page .inner-header,
+.manufacturing-page .inner-header,
+.contacts-page .inner-header {
+    background: var(--core-white);
+    position: relative;
+    z-index: 5
+}
+
+.about-page .inner-header__content,
+.portfolio-page .inner-header__content,
+.manufacturing-page .inner-header__content,
+.contacts-page .inner-header__content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 108px;
+    padding-top: 20px
+}
+
+.about-page .inner-header__logo,
+.portfolio-page .inner-header__logo,
+.manufacturing-page .inner-header__logo,
+.contacts-page .inner-header__logo {
+    display: block;
+    width: 172px
+}
+
+.about-page .inner-header__logo-image,
+.portfolio-page .inner-header__logo-image,
+.manufacturing-page .inner-header__logo-image,
+.contacts-page .inner-header__logo-image {
+    height: auto;
+    width: 100%
+}
+
+.about-page .inner-header__navigation,
+.portfolio-page .inner-header__navigation,
+.manufacturing-page .inner-header__navigation,
+.contacts-page .inner-header__navigation {
+    display: flex;
+    gap: 34px
+}
+
+.about-page .inner-header__link,
+.portfolio-page .inner-header__link,
+.manufacturing-page .inner-header__link,
+.contacts-page .inner-header__link {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative
+}
+
+.about-page .inner-header__link::after,
+.portfolio-page .inner-header__link::after,
+.manufacturing-page .inner-header__link::after,
+.contacts-page .inner-header__link::after {
+    background: var(--core-red);
+    bottom: -8px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+    width: 100%
+}
+
+.about-page .inner-header__link:hover::after,
+.portfolio-page .inner-header__link:hover::after,
+.manufacturing-page .inner-header__link:hover::after,
+.contacts-page .inner-header__link:hover::after {
+    transform: scaleX(1)
+}
+
+.about-page .inner-header__link--active::after,
+.portfolio-page .inner-header__link--active::after,
+.manufacturing-page .inner-header__link--active::after,
+.contacts-page .inner-header__link--active::after {
+    transform: scaleX(1)
+}
+
+.about-page .inner-header__phone,
+.portfolio-page .inner-header__phone,
+.manufacturing-page .inner-header__phone,
+.contacts-page .inner-header__phone {
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.about-page .inner-header__menu-button,
+.portfolio-page .inner-header__menu-button,
+.manufacturing-page .inner-header__menu-button,
+.contacts-page .inner-header__menu-button {
+    display: none
+}
+
+.about-page .inner-button,
+.portfolio-page .inner-button,
+.manufacturing-page .inner-button,
+.contacts-page .inner-button {
+    align-items: center;
+    background: var(--core-red);
+    color: var(--core-white);
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 18px;
+    justify-content: center;
+    letter-spacing: .1em;
+    min-height: 58px;
+    padding: 14px 24px;
+    text-transform: uppercase;
+    transition: background-color .25s ease, transform .25s ease
+}
+
+.about-page .inner-button:hover,
+.portfolio-page .inner-button:hover,
+.manufacturing-page .inner-button:hover,
+.contacts-page .inner-button:hover {
+    background: #c90022;
+    transform: translateY(-2px)
+}
+
+.about-page .inner-hero,
+.portfolio-page .inner-hero,
+.manufacturing-page .inner-hero,
+.contacts-page .inner-hero {
+    background: var(--core-white);
+    padding: 58px 0 104px
+}
+
+.about-page .inner-hero__eyebrow,
+.portfolio-page .inner-hero__eyebrow,
+.manufacturing-page .inner-hero__eyebrow,
+.contacts-page .inner-hero__eyebrow {
+    color: var(--core-red);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase
+}
+
+.about-page .inner-hero__title,
+.portfolio-page .inner-hero__title,
+.manufacturing-page .inner-hero__title,
+.contacts-page .inner-hero__title {
+    font-family: var(--core-font-display);
+    font-size: clamp(42px, 6vw, 92px);
+    letter-spacing: -.075em;
+    line-height: 1.02;
+    margin-top: 22px;
+    max-width: 1100px;
+    text-wrap: pretty
+}
+
+.about-page .inner-hero__lead,
+.portfolio-page .inner-hero__lead,
+.manufacturing-page .inner-hero__lead,
+.contacts-page .inner-hero__lead {
+    color: #4f4f4f;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-top: 30px;
+    max-width: 710px
+}
+
+.about-page .inner-section,
+.portfolio-page .inner-section,
+.manufacturing-page .inner-section,
+.contacts-page .inner-section {
+    padding: 132px 0
+}
+
+.about-page .inner-section--dark,
+.portfolio-page .inner-section--dark,
+.manufacturing-page .inner-section--dark,
+.contacts-page .inner-section--dark {
+    background: var(--core-ink);
+    color: var(--core-white)
+}
+
+.about-page .inner-section__title,
+.portfolio-page .inner-section__title,
+.manufacturing-page .inner-section__title,
+.contacts-page .inner-section__title {
+    font-family: var(--core-font-display);
+    font-size: clamp(30px, 3.7vw, 56px);
+    letter-spacing: -.065em;
+    line-height: 1.12;
+    max-width: 890px;
+    text-wrap: pretty
+}
+
+.about-page .inner-section__lead,
+.portfolio-page .inner-section__lead,
+.manufacturing-page .inner-section__lead,
+.contacts-page .inner-section__lead {
+    color: #4f4f4f;
+    font-size: 18px;
+    line-height: 1.65;
+    margin-top: 25px;
+    max-width: 720px
+}
+
+.about-page .inner-section--dark .inner-section__lead,
+.portfolio-page .inner-section--dark .inner-section__lead,
+.manufacturing-page .inner-section--dark .inner-section__lead,
+.contacts-page .inner-section--dark .inner-section__lead {
+    color: #d0d0d0
+}
+
+.about-page .about-story,
+.manufacturing-page .manufacturing-story {
+    display: grid;
+    gap: 10vw;
+    grid-template-columns: .82fr 1.18fr
+}
+
+.about-page .about-story__copy p,
+.manufacturing-page .manufacturing-story__copy p {
+    color: #4f4f4f;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 20px
+}
+
+.about-page .about-values,
+.manufacturing-page .manufacturing-team {
+    border-top: 1px solid #bdbdbb
+}
+
+.about-page .about-values__item,
+.manufacturing-page .manufacturing-team__item {
+    border-bottom: 1px solid #bdbdbb;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 70px 1fr;
+    padding: 31px 0
+}
+
+.about-page .about-values__number,
+.manufacturing-page .manufacturing-team__number {
+    color: var(--core-red);
+    font-family: var(--core-font-display);
+    font-size: 16px
+}
+
+.about-page .about-values__title,
+.manufacturing-page .manufacturing-team__title {
+    font-size: 21px;
+    font-weight: 700
+}
+
+.about-page .about-values__text,
+.manufacturing-page .manufacturing-team__text {
+    color: #4f4f4f;
+    line-height: 1.55;
+    margin-top: 8px;
+    max-width: 540px
+}
+
+.about-page .about-facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 72px
+}
+
+.about-page .about-facts__item {
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    padding: 0 24px
+}
+
+.about-page .about-facts__item:first-child {
+    border-left: 0;
+    padding-left: 0
+}
+
+.about-page .about-facts__number {
+    display: block;
+    font-family: var(--core-font-display);
+    font-size: clamp(28px, 3.2vw, 50px);
+    letter-spacing: -.08em
+}
+
+.about-page .about-facts__label {
+    color: #d0d0d0;
+    display: block;
+    font-size: 13px;
+    margin-top: 12px
+}
+
+.about-page .about-cta {
+    margin-top: 45px
+}
+
+.portfolio-page .portfolio-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 54px
+}
+
+.portfolio-page .portfolio-card {
+    background: var(--core-ink);
+    cursor: zoom-in;
+    min-height: 420px;
+    overflow: hidden;
+    position: relative;
+    text-align: left
+}
+
+.portfolio-page .portfolio-card__image {
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+    transition: transform .7s cubic-bezier(.2, .75, .25, 1);
+    width: 100%
+}
+
+.portfolio-page .portfolio-card:hover .portfolio-card__image {
+    transform: scale(1.07)
+}
+
+.portfolio-page .portfolio-card__overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .86), rgba(0, 0, 0, 0) 62%);
+    inset: 0;
+    position: absolute
+}
+
+.portfolio-page .portfolio-card__content {
+    bottom: 0;
+    color: var(--core-white);
+    display: block;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+    right: 0
+}
+
+.portfolio-page .portfolio-card__title {
+    display: block;
+    font-size: 20px;
+    font-weight: 700
+}
+
+.portfolio-page .portfolio-card__meta {
+    color: #dedede;
+    display: block;
+    font-size: 12px;
+    margin-top: 8px
+}
+
+.manufacturing-page .manufacturing-showcase {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 1.15fr .85fr;
+    margin-top: 62px
+}
+
+.manufacturing-page .manufacturing-showcase__image {
+    display: block;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    width: 100%
+}
+
+.manufacturing-page .manufacturing-showcase__image--tall {
+    min-height: 740px
+}
+
+.manufacturing-page .manufacturing-equipment {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px
+}
+
+.manufacturing-page .manufacturing-equipment__item {
+    background: #242424;
+    min-height: 200px;
+    padding: 27px
+}
+
+.manufacturing-page .manufacturing-equipment__index {
+    color: var(--core-red);
+    font-size: 12px;
+    font-weight: 700
+}
+
+.manufacturing-page .manufacturing-equipment__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 42px
+}
+
+.contacts-page .contacts-layout {
+    display: grid;
+    gap: 9vw;
+    grid-template-columns: .8fr 1.2fr
+}
+
+.contacts-page .contacts-list {
+    margin-top: 20px;
+    border-top: 1px solid #bdbdbb
+}
+
+.contacts-page .contacts-item {
+    border-bottom: 1px solid #bdbdbb;
+    padding: 24px 0
+}
+
+.contacts-page .contacts-item__label {
+    color: #666;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.contacts-page .contacts-item__value {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 8px;
+    max-width: 540px
+}
+
+.contacts-page .contacts-map {
+    min-height: 520px;
+    overflow: hidden;
+    position: relative
+}
+
+.contacts-page .contacts-map__frame {
+    border: 0;
+    display: block;
+    height: 100%;
+    min-height: 520px;
+    width: 100%
+}
+
+.about-page .inner-footer,
+.portfolio-page .inner-footer,
+.manufacturing-page .inner-footer,
+.contacts-page .inner-footer {
+    background: var(--core-ink);
+    color: var(--core-white);
+    padding: 32px 0
+}
+
+.about-page .inner-footer__content,
+.portfolio-page .inner-footer__content,
+.manufacturing-page .inner-footer__content,
+.contacts-page .inner-footer__content {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between
+}
+
+.about-page .inner-footer__links,
+.portfolio-page .inner-footer__links,
+.manufacturing-page .inner-footer__links,
+.contacts-page .inner-footer__links {
+    display: flex;
+    gap: 23px
+}
+
+.about-page .inner-footer a,
+.portfolio-page .inner-footer a,
+.manufacturing-page .inner-footer a,
+.contacts-page .inner-footer a {
+    color: #d7d7d7;
+    font-size: 12px
+}
+
+.about-page .inner-cookie,
+.portfolio-page .inner-cookie,
+.manufacturing-page .inner-cookie,
+.contacts-page .inner-cookie {
+    align-items: center;
+    background: var(--core-white);
+    bottom: 20px;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .18);
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    left: 20px;
+    max-width: 690px;
+    padding: 20px 22px;
+    position: fixed;
+    z-index: 20
+}
+
+.about-page .inner-cookie[hidden],
+.portfolio-page .inner-cookie[hidden],
+.manufacturing-page .inner-cookie[hidden],
+.contacts-page .inner-cookie[hidden] {
+    display: none
+}
+
+.about-page .inner-cookie__text,
+.portfolio-page .inner-cookie__text,
+.manufacturing-page .inner-cookie__text,
+.contacts-page .inner-cookie__text {
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: 1.45;
+    max-width: 455px
+}
+
+.about-page .inner-cookie__link,
+.portfolio-page .inner-cookie__link,
+.manufacturing-page .inner-cookie__link,
+.contacts-page .inner-cookie__link {
+    text-decoration: underline
+}
+
+.about-page .inner-cookie__button,
+.portfolio-page .inner-cookie__button,
+.manufacturing-page .inner-cookie__button,
+.contacts-page .inner-cookie__button {
+    background: var(--core-ink);
+    color: var(--core-white);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: 12px 16px;
+    text-transform: uppercase
+}
+
+.portfolio-page .inner-lightbox {
+    align-items: center;
+    background: rgba(0, 0, 0, .95);
+    display: none;
+    inset: 0;
+    justify-content: center;
+    padding: 42px;
+    position: fixed;
+    z-index: 30
+}
+
+.portfolio-page .inner-lightbox--open {
+    display: flex
+}
+
+.portfolio-page .inner-lightbox__image {
+    height: 100%;
+    max-height: 86vh;
+    object-fit: contain;
+    width: 100%
+}
+
+.portfolio-page .inner-lightbox__close {
+    color: var(--core-white);
+    font-size: 34px;
+    line-height: 1;
+    position: absolute;
+    right: 24px;
+    top: 18px
+}
+
+.about-page .inner-animate,
+.portfolio-page .inner-animate,
+.manufacturing-page .inner-animate,
+.contacts-page .inner-animate {
+    will-change: transform, opacity
+}
